@@ -1,0 +1,49 @@
+#msg, #msg_confirma, #msg_encerra, #contratar, #favoritar,{
+	.modal-dialog{
+		position: relative;
+    	top: 40%;
+    	transform: translateY(-50%);
+		.modal-content{
+			.modal-body{
+				padding: 50px;
+				@media screen and(max-width: 425px){
+					padding: 50px 30px;
+				}
+				p{
+					text-align: center;
+				}
+				a{
+					width: 100px;
+					background-color: $blue-button;
+					color: #fff;
+					padding: 5px 0;
+					border-radius: 5px;
+				}
+				.btn-sim{
+					width: 150px;
+					background-color: $green;
+					color: #fff;
+					padding: 5px 0;
+					border-radius: 5px;
+					float: left;
+					margin-left: 15%;
+					@media screen and(max-width: 425px){
+						width: 30%;
+					}
+				}
+				.btn-nao{
+					width: 150px;
+					background-color: $red;
+					color: #fff;
+					padding: 5px 0;
+					border-radius: 5px;
+					float: right;
+					margin-right: 15%;
+					@media screen and(max-width: 425px){
+						width: 30%;
+					}
+				}
+			}
+		}
+	}
+}

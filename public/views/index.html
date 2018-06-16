@@ -1,0 +1,103 @@
+<html lang="pt-br" ng-app="app">
+	<head>
+
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Avengers - Infinite War</title>
+
+        <base href="/">
+
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="bower_components/d3-kagi/dist/kagi.css" rel="stylesheet">
+        <link href="bower_components/devextreme/css/dx.commom.css" rel="stylesheet">
+        <link href="bower_components/devextreme/css/dx.light.css" rel="stylesheet">
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <link rel="stylesheet" href="style/css/base.css">
+
+	</head>
+
+	<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h1 class="my-4">Shop Name</h1>
+                    <div class="list-group">
+                        <a href="/" class="list-group-item">Stacked Bar</a>
+                        <a href="/word-cloud" class="list-group-item">Word Cloud</a>
+                        <a href="/retweet" class="list-group-item">Retweet</a>
+                    </div>    
+                </div>
+                <div class="col-lg-9">
+                    <div ng-view></div>
+                </div>
+            </div>
+        </div>    	
+
+    	<footer class="py-5 bg-dark">
+
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+            </div>
+    		
+    		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+            <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+            <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+            <script type="text/javascript" src="bower_components/chart.js/dist/Chart.min.js"></script>
+            <script type="text/javascript" src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+            <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+            <script type="text/javascript" src="bower_components/d3-kagi/dist/kagi.js"></script>
+            <script type="text/javascript" src="bower_components/devextreme/js/dx.all.js"></script>
+            <script type="text/javascript" src="bower_components/d3-word/d3.layout.cloud.js"></script>
+            <script type="text/javascript" src="bower_components/d3-word/d3.wordcloud.js"></script>
+            
+            <script type="text/javascript" src="js/config.js"></script>
+            <script type="text/javascript" src="js/route.js"></script>
+
+            <script type="text/javascript" src="js/controllers/HomeController.js"></script>
+            <script type="text/javascript" src="js/controllers/CloudController.js"></script>
+            <script type="text/javascript" src="js/controllers/RetweetController.js"></script>
+            <script type="text/javascript" src="js/factory/HomeFactory.js"></script>
+
+    	</footer>
+
+	</body>
+
+</html>

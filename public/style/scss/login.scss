@@ -1,0 +1,453 @@
+.masthead{
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	margin: 0;
+	@media screen and(max-width: 1024px){
+		height: auto;
+	}
+	#first{
+		margin: 0;
+		#login-background{
+			padding: 0;
+			.masthead-bg{
+				height: 100%;
+				@media screen and(max-width: 425px){
+					height: auto;
+				}
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					@media screen and(max-width: 425px){
+						height: auto;
+					}
+				}
+				#slogan{
+					position: absolute;
+					bottom: 15%;
+					left: 10%;
+					h1{
+						color: #fff;
+						font-size: 4em;
+						text-transform: uppercase;
+						b{
+							font-family: 'Rubik-Bold';
+						}
+						@media screen and(max-width: 425px){
+							font-size: 2em;
+						}
+						img{
+							width: 150px;
+							height: auto;
+							@media screen and(max-width: 425px){
+								width: 80px;
+								height: auto;
+							}
+						}
+					}
+				}
+				.effect{
+					padding: 2em;
+					position: relative;
+					z-index: 90;
+				}
+				.effect:before {
+					border: 30px solid $purple-body;				    
+					border-bottom: 30px solid transparent;
+					bottom: 0;    
+					content: '';
+					position: absolute;
+					top: -30px;
+					width: 65%;
+					z-index: 0;
+					height: 230px;
+					@media screen and(max-width: 425px){
+						border: 12px solid #351d54;
+						border-bottom: none;
+						bottom: 0;
+						content: '';
+						position: absolute;
+						top: 24px;
+						width: 38%;
+						z-index: 0;
+						height: 94px;
+					}
+				}
+				.effect:before {
+					border-right: none;
+					left: -30px;
+					@media screen and(max-width: 425px){
+						left: 6px;
+					}
+				}
+			}
+		}
+		#login-panel{
+			background-color: black;
+			padding: 0;
+			@media screen and (min-width: 768px){
+				height: 100%;
+				min-height: 0;
+				padding-bottom: 0;
+			}
+			.masthead-bg {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				width: 100%;
+				min-height: 35rem;
+				height: 100%;
+				background-color: black;
+				transform: skewY(3deg);
+				transform-origin: top right;
+				@media screen and (min-width: 768px){
+					min-height: 0;
+					transform: skewX(6deg);
+					transform-origin: bottom right
+				}
+				@media screen and(max-width: 425px){
+					transform: skewY(-5deg);
+					transform-origin: bottom left;
+				}
+			}
+			.container{
+				width: auto;
+				.site-login, .site-sign{
+					height: 100%;
+					display: table;
+					overflow: hidden;
+					@media screen and(max-width: 425px){
+						padding-bottom: 100px;
+						height: auto;
+					}
+					.menu-mobile{
+						display: none;
+						@media screen and(max-width: 425px){
+							display: block;
+							margin-top: 40px;
+							position: relative;
+							a{
+								color: #bbb;
+								font-size: 1em;
+								padding-top: 4px;
+							}
+							ul{
+								float: right;
+								li{
+									padding: 0 20px;
+									a{
+										text-transform: uppercase;
+										color: #bbb;
+										padding-left: 0;
+										padding-right: 0;
+									}
+									a:hover{
+										background-color: transparent;
+										border-bottom: 12px solid $pink;
+										padding-bottom: 2px;
+									}
+								}
+								li.active{
+									background-color: transparent;
+									a{
+										background-color: transparent;
+										border-bottom: 12px solid #de3052;
+										padding-bottom: 2px;
+										color: #fff;
+										padding-left: 0;
+										padding-right: 0;
+									}
+								}
+							}
+						}
+					}
+					.effect{
+						padding-left: 17%;
+						padding-right: 17%;
+						display: table-cell;
+						vertical-align: middle;
+						@media screen and(max-width: 425px){
+							margin-top: 0;
+							padding-left: 0;
+							padding-right: 0;
+							display: block;
+						}
+						.btn-fc{
+							font-family: 'Rubik-Bold';
+							@media screen and(max-width: 425px){
+								margin-top: 80px;
+							}
+						}
+						.tab-content{
+							.tab-pane{
+								height: 580px;
+								overflow-y: auto;
+								width: 95%;
+								overflow-x: hidden;
+								@media screen and(max-width: 425px){
+									width: 100%;
+								}
+							}
+							.tab-pane.active{
+								animation: fadein 2s;
+								-moz-animation: fadein 2s; /* Firefox */
+								-webkit-animation: fadein 2s; /* Safari and Chrome */
+								-o-animation: fadein 2s; /* Opera */
+							}
+							@keyframes fadein {
+								from {
+									opacity:0;
+								}
+								to {
+									opacity:1;
+								}
+							}
+							@-moz-keyframes fadein { /* Firefox */
+								from {
+									opacity:0;
+								}
+								to {
+									opacity:1;
+								}
+							}
+							@-webkit-keyframes fadein { /* Safari and Chrome */
+								from {
+									opacity:0;
+								}
+								to {
+									opacity:1;
+								}
+							}
+							@-o-keyframes fadein { /* Opera */
+								from {
+									opacity:0;
+								}
+								to {
+									opacity: 1;
+								}
+							}
+						}
+						.btns{
+							#btn-facebook{
+								width: 80%;
+								background-color: $blue-facebook;
+								color: #fff;
+								padding: 20px;
+								margin-top: 40px;
+								margin-bottom: 40px;
+								text-transform: uppercase;
+								border-radius: 10px;
+							}
+							#sign-facebook{
+								width: 80%;
+								background-color: $blue-facebook;
+								color: #fff;
+								padding: 20px;
+								margin-top: 40px;
+								margin-bottom: 40px;
+								text-transform: uppercase;
+								border-radius: 10px;
+								font-family: 'Rubik-Bold';
+							}
+							#btn-account{
+								width: 100%;
+								width: 80%;
+								padding: 10px;
+								margin-top: 30px;
+								margin-bottom: 30px;
+								text-transform: uppercase;
+								color: #fff;
+								border-radius: 10px;
+							}
+							p{
+								color: #fff;
+								span{
+									background: black;
+									padding: 0 10px;
+								}
+							}
+							hr{
+								margin-top: -20px;
+								z-index: 10;
+								width: 80%;
+								border: 1px solid #ccc;
+							}
+							#btn-entrar{
+								width: 80%;
+								background-color: $pink;
+								color: #fff;
+								padding: 20px;
+								margin-top: 40px;
+								margin-bottom: 40px;
+								text-transform: uppercase;
+								border-radius: 10px;
+								font-family: 'Rubik-Bold';
+							}
+						}
+						#choice-sign{
+							@media screen and(max-width: 425px){
+								margin-top: 25%;
+							}
+							#btn-facebook{
+								width: 80%;
+								background-color: $blue-facebook;
+								color: #fff;
+								padding: 20px;
+								margin-top: 40px;
+								margin-bottom: 40px;
+								text-transform: uppercase;
+								border-radius: 10px;
+							}
+							#sign-facebook{
+								width: 80%;
+								background-color: $blue-facebook;
+								color: #fff;
+								padding: 20px;
+								margin-top: 40px;
+								margin-bottom: 40px;
+								text-transform: uppercase;
+								border-radius: 10px;
+								font-family: 'Rubik-Bold';
+							}
+							#btn-account{
+								width: 100%;
+								width: 80%;
+								padding: 10px;
+								margin-top: 30px;
+								margin-bottom: 30px;
+								text-transform: uppercase;
+								color: #fff;
+								border-radius: 10px;
+							}
+							p{
+								color: #fff;
+								span{
+									background: black;
+									padding: 0 10px;
+								}
+							}
+							hr{
+								margin-top: -20px;
+								z-index: 10;
+								width: 80%;
+								border: 1px solid #ccc;
+							}
+							#btn-entrar{
+								width: 80%;
+								background-color: $pink;
+								color: #fff;
+								padding: 20px;
+								margin-top: 40px;
+								margin-bottom: 40px;
+								text-transform: uppercase;
+								border-radius: 10px;
+								font-family: 'Rubik-Bold';
+							}
+						}
+						.login-form{
+							.form-group{
+								width: 80%;
+								label{
+									text-transform: uppercase;
+									color: #bbb;
+									font-size: 0.8em;
+									margin-bottom: 0;
+									font-family: 'Rubik-Bold';
+								}
+								input[type="email"], input[type="password"], input[type="text"]{
+									border: none;
+									border-radius: 0;
+									border-bottom: 1px solid #ccc;
+									background-color: transparent;
+									box-shadow: none;
+									padding-left: 0px;
+									padding-bottom: 5px;
+									color: #fff;
+									font-size: .9em;
+									font-family: 'Rubik-Regular';
+								}
+							}
+							.form-check{
+								width: 80%;
+								label{
+									color: #bbb;
+									font-size: 0.76em;
+								}
+							}
+							.forget{
+								position: absolute;
+								text-align: right;
+								float: right;
+								right: 78px;
+								font-size: 0.8em;
+								color: #bbb;
+								text-transform: uppercase;
+								font-family: 'Rubik-Light';
+							}
+						}
+						.sign-form{
+							.form-group{
+								width: 80%;
+								margin-bottom: 30px;
+								label{
+									text-transform: uppercase;
+									color: #bbb;
+									font-size: 0.8em;
+									margin-bottom: 0;
+									font-family: 'Rubik-Bold';
+								}
+								input[type="email"], input[type="password"], input[type="text"]{
+									border: none;
+									border-radius: 0;
+									border-bottom: 1px solid #ccc;
+									background-color: transparent;
+									box-shadow: none;
+									padding-left: 0px;
+									padding-bottom: 5px;
+									color: #fff;
+									font-size: 1.2em;
+									margin-top: 5px;
+									font-family: 'Rubik-Regular';
+								}
+							}
+							.form-check{
+								width: 80%;
+								label{
+									color: #aaa;
+									font-size: 0.76em;
+									text-transform: uppercase;
+									font-family: 'Rubik-Regular';
+									a{
+										color: $green-pool;
+										font-family: 'Rubik-Bold';
+									}
+								}
+							}
+							.forget{
+								position: absolute;
+								text-align: right;
+								float: right;
+								right: 78px;
+								font-size: 0.8em;
+								color: #bbb;
+							}
+						}
+						.icon{
+							a{
+								i{
+									font-size: 80px;
+									margin-top: -30px;
+									color: #a1a1a1;
+									cursor: pointer;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

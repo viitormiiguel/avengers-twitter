@@ -1,0 +1,230 @@
+#experiencia {
+	background-color: #1A1A1A !important;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#tela_experiencia {
+	color: #fff;
+	font-family: Rubik;
+	margin-top: 50px;
+	.date_exp {
+		border: 20px solid $pink; 
+		border-bottom: 20px solid transparent;
+		border-right: 0px solid transparent;
+		h1 {
+			font-family: 'Blanka Regular';
+			font-size: 66px;
+		}
+		h2 {
+			font-family: Rubik;
+		}
+	}
+	.title_experiencia {
+		font-family: Rubik;
+		border-left: 6px solid $green-yellow;
+		margin-left: 15px;
+		background-color: #1A1A1A !important;
+		h1 {
+			font-weight: bold;
+			margin-top: 0;
+		}
+		h3 {
+			font-weight: 200;
+			color: grey;
+			margin-top: 20px;
+		}
+	}
+	.text_experiencia {
+		p {
+			font-family: Rubik;
+			color: grey;
+			word-break: break-all;
+			
+		}	
+		.text_icon {
+			color: $green-yellow;
+			float: right;
+			font-size: 2.6em;
+			cursor: pointer;
+		}
+
+		.number-people_experiencia {
+			border-left: 10px solid $green-yellow;
+			.number_h5 {
+				font-family: 'Blanka Regular';
+				font-size: 2.2em;
+			}
+			.people_experiencia {
+				margin-top: 13px;
+				h5 {
+					font-family: Rubik;
+				}
+			}
+		}
+		.classification_experiencia {
+			border-left: 10px solid $green-yellow;
+			h6 {
+				margin-bottom: 0;
+			}
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.image-primary {
+	height: 220px;
+	width: 300px;
+	background-size: 120px;
+	cursor: pointer;
+
+		&.img-slide-0 {
+			background-image: url('../../img/inspirador2.svg');
+			background-repeat: no-repeat;
+			height: 135px;
+			background-size: 300px;
+		}
+
+		&.img-slide-1 {
+			background-image: url('../../img/grupo1.svg');
+			background-repeat: no-repeat;
+		}
+
+		&.img-slide-2 {
+			background-image: url('../../img/local1.svg');
+			background-repeat: no-repeat;
+			width: 180px;
+			height: 235px;
+		}
+
+		&.img-slide-3 {
+			background-image: url('../../img/ticket1.svg');
+			background-repeat: no-repeat;
+		}
+}
+
+.image-secondary {
+	height: 60px;
+	width: 60px;
+	background-size: 60px;
+	cursor: pointer;
+
+	&.img-slide-0 {
+		background-image: url('../../img/círculo_degradê.svg');
+		background-repeat: no-repeat;
+	}
+
+	&.img-slide-1 {
+		background-image: url('../../img/grupo1.svg');
+		background-repeat: no-repeat;
+	}
+
+	&.img-slide-2 {
+		background-image: url('../../img/local1.svg');
+		background-repeat: no-repeat;
+	}
+
+	&.img-slide-3 {
+		background-image: url('../../img/ticket1.svg');
+		background-repeat: no-repeat;
+	}
+}
+
+.text-carousel {
+	color: #CCC;
+
+	&.text-profile {
+		font-size: 12px;
+	}
+	
+	&.text-title-light {
+		cursor: pointer;
+		font-weight: bold;
+	}
+	
+	&.text-title-dark {
+		cursor: pointer;
+		font-weight: bold;
+		color: grey;
+	}
+}
+
+.line-experience {
+	margin-top: 0;
+	margin-bottom: 0;
+	position: absolute;
+	border: 2px solid;
+	border-color: #a9e23b;
+	border-radius: 10px;
+	
+	&.part1 {
+		top: 440px;
+		left: 0;
+		width: 150px;
+		transform: rotate(170deg);
+	}
+	&.part2 {
+		top: 397px;
+		width: 90px;
+		left: 140.5px;
+		transform: rotate(140deg);
+	}
+	&.part3 {
+		top: 395px;
+		width: 70px;
+		left: 209px;
+		transform: rotate(50deg);
+	}
+	&.part4 {
+		top: 395px;
+		width: 70px;
+		left: 255px;
+		transform: rotate(130deg);
+	}
+	&.part5 {
+		top: 368px;
+		width: 78px;
+		left: 315px;
+		transform: rotate(180deg);
+	}
+	&.part6 {
+		top: 389px;
+		width: 157px;
+		left: 687px;
+		transform: rotate(190deg);
+	}
+	&.part7 {
+		top: 369px;
+		width: 192px;
+		left: 841px;
+		transform: rotate(160deg);
+	}
+	&.part8 {
+		top: 345px;
+		width: 130px;
+		left: 1091px;
+		transform: rotate(190deg);
+	}
+	&.part9 {
+		top: 353px;
+		width: 125px;
+		left: 1221px;
+		transform: rotate(177deg);
+	}
+}
+
+.carousel-indicators .active {
+	background-color: #de3052;
+}
+
+.btn-experience {
+	background-color: #1A1A1A;
+	color: #FFF;
+	border: 4px solid #a9e23b;
+	padding: 16px 42px;
+	font-weight: 1000;
+	font-size: 15px;
+  border-radius: 5px;
+}

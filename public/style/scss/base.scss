@@ -1,0 +1,75 @@
+
+@import 'utilities';
+@import 'colors';
+@import 'fonts';
+@import 'nav';
+@import 'login';
+@import 'criar-exp';
+@import 'explorer';
+@import 'popup';
+@import 'carousel';
+@import 'valid'; 
+@import 'modal';
+@import 'experiencia';
+@import 'timeline';
+
+body {
+  	padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  	body {
+	    padding-top: 56px;
+  	}
+}
+
+section {
+	padding: 150px 0;
+}
+
+#about{
+	padding-top: 60px;
+	padding-bottom: 0;
+	h2{
+		padding: 10px 0;
+	}
+	p{
+		padding-top: 20px;
+	}
+}
+
+#wc{
+	padding-top: 50px;
+}
+
+#chart{
+	.form-group{
+		margin-top: -10px;
+    	width: 20%;
+	}
+	#grafico{
+		margin-top: 40px;
+		p{
+			padding: 10px 150px 40px;
+		}
+		#kagiChart{
+			svg{
+				width: 100%;
+			}
+		}
+	}
+}
+
+.tooltip{
+	display: block!important;
+    opacity: 1!important;
+    top: 94%!important;
+    left: 33%!important;
+    position: absolute!important;
+}
+
+footer{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+
+input[type="text"].ng-invalid, 
+input[type="password"].ng-invalid,
+input[type="email"].ng-invalid,
+input[type="number"].ng-invalid,
+select.ng-invalid{
+	border-bottom: 1px solid red!important;
+}
+
+input[type="text"].ng-valid{
+	// border: 1px solid #32CD32;
+}
+
+input[type="text"]:disabled{
+	background-color: transparent;
+	cursor: not-allowed;
+}
+
+input[type="radio"].ng-invalid + label{
+	color: red;
+}
