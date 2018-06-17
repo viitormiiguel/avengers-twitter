@@ -55,7 +55,5 @@ app.controller('CloudController', ['$rootScope', '$location', '$scope', '$http',
 	        	.start();
 		}, 1000 );		
 	}
-
-
-
+	
 }]);

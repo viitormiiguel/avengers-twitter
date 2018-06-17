@@ -2,16 +2,16 @@
 @import 'utilities';
 @import 'colors';
 @import 'fonts';
-@import 'nav';
-@import 'login';
-@import 'criar-exp';
-@import 'explorer';
-@import 'popup';
-@import 'carousel';
-@import 'valid'; 
-@import 'modal';
-@import 'experiencia';
-@import 'timeline';
+// @import 'nav';
+// @import 'login';
+// @import 'criar-exp';
+// @import 'explorer';
+// @import 'popup';
+// @import 'carousel';
+// @import 'valid'; 
+// @import 'modal';
+// @import 'experiencia';
+// @import 'timeline';
 
 body {
   	padding-top: 54px;
@@ -25,6 +25,18 @@ body {
 
 section {
 	padding: 150px 0;
+}
+
+.section-range{
+	#block{
+		#chart, #chart2{
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		#chart2{
+			margin-bottom: 120px;
+		}
+	}
 }
 
 #about{
@@ -43,6 +55,7 @@ section {
 }
 
 #chart{
+	margin-top: 50px;
 	.form-group{
 		margin-top: -10px;
     	width: 20%;
@@ -60,16 +73,26 @@ section {
 	}
 }
 
-.tooltip{
-	display: block!important;
-    opacity: 1!important;
-    top: 94%!important;
-    left: 33%!important;
-    position: absolute!important;
-}
+// .tooltip{
+// 	display: block!important;
+//     opacity: 1!important;
+//     top: 94%!important;
+//     left: 33%!important;
+//     position: absolute!important;
+// }
 
 footer{
-	position: absolute;
+	// position: absolute;
+	margin-top: 100px;
     bottom: 0;
     width: 100%;
+    padding-top: 50px!important;
+}
+
+#wc{
+	.selectpicker{
+		.btn-info{
+			height: 20px;
+		}
+	}
 }
