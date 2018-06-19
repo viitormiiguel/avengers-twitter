@@ -72,6 +72,7 @@ app.controller('HomeController', ['$rootScope', '$location', '$scope', '$http', 
 	// 			}
 	// 		}
 	// 		$scope.a2.push($scope.dia);
+	// 		console.log($scope.a2)
 	// 	}, function (errResponse){
 	// 		console.log(errResponse);
 	// 	});
@@ -84,23 +85,23 @@ app.controller('HomeController', ['$rootScope', '$location', '$scope', '$http', 
 	// control.getPolarity2("2018_05_04");
 
 	$scope.antes = [
-		{state: "20/04", pos: 14096, neg: 16953, neu: 9711},
-		{state: "21/04", pos: 31381, neg: 39273, neu: 21012},
-		{state: "22/04", pos: 45050, neg: 50957, neu: 39400},
-		{state: "23/04", pos: 68608, neg: 86157, neu: 63413},
-		{state: "24/04", pos: 267035, neg: 238571, neu: 211292},
-		{state: "25/04", pos: 196448, neg: 237083, neu: 104346},
-		{state: "26/04", pos: 209628, neg: 272942, neu: 120521},
-		{state: "27/04", pos: 187129, neg: 359409, neu: 138565}
+		{state: "20/04", pos: 19709, neg: 5452, neu: 15599},
+		{state: "21/04", pos: 42276, neg: 12986, neu: 36404},
+		{state: "22/04", pos: 55397, neg: 18336, neu: 61674},
+		{state: "23/04", pos: 81816, neg: 36454, neu: 99908},
+		{state: "24/04", pos: 258376, neg: 129003, neu: 329519},
+		{state: "25/04", pos: 199190, neg: 84258, neu: 254429},
+		{state: "26/04", pos: 265065, neg: 100184, neu: 237842},
+		{state: "27/04", pos: 246126, neg: 160846, neu: 278131}
 	];
 
 	$scope.depois = [
-		{state: "29/04", pos: 278960, neg: 548341, neu: 274631},
-		{state: "30/04", pos: 371220, neg: 727015, neu: 471110},
-		{state: "01/05", pos: 299416, neg: 624521, neu: 286139},
-		{state: "02/05", pos: 210827, neg: 413468, neu: 147255},
-		{state: "03/05", pos: 163894, neg: 313068, neu: 110622},
-		{state: "04/05", pos: 97356, neg: 237231, neu: 82949}
+		{state: "29/04", pos: 363795, neg: 231265, neu: 506872},
+		{state: "30/04", pos: 448868, neg: 348742, neu: 771735},
+		{state: "01/05", pos: 372368, neg: 308646, neu: 529062},
+		{state: "02/05", pos: 259038, neg: 238169, neu: 274343},
+		{state: "03/05", pos: 194307, neg: 191772, neu: 201505},
+		{state: "04/05", pos: 117273, neg: 150002, neu: 150261}
 	];
 
 	control.activeChartBef = function(dataSource){		
